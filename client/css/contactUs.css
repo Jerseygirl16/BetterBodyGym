@@ -1,0 +1,19 @@
+#contact{
+    background-color: #EAEAEA;
+    font-family: Arial, sans-serif;
+    width: 350px;
+    padding: 10px;
+}
+label{
+    float:left; clear: left; display: block;
+    width: 100px; padding-right: 10px;
+    margin-top: 10px; text-align: right;
+}
+input{
+    display:block; margin-top: 10px;
+}
+textarea{
+    display:block; margin-top:10px;
+    overflow: scroll;
+}
+input[type="submit"] {margin-left: 110px;}
