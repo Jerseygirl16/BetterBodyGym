@@ -1,0 +1,196 @@
+body {
+  font-family: Arial;
+  font-size: 17px;
+  padding: 8px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  height: 600;
+    width: 300;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  display: grid;
+  grid-template: 1fr;
+    grid-gap: 10px 2em;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25,
+.col-50,
+.col-75 {
+  padding: 0 16px;
+}
+
+.container {
+  background-color: turquoise;
+  text-align: center;
+  width: 800px;
+  overflow: hidden;
+  margin: auto;
+  background-color: turquoise;
+  margin: 20 0 0 450px;
+  padding: 50px;
+  border-radius: 5px;
+}
+
+#name{
+  width: 300px;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  padding-left: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px; 
+  text-align: center;
+}
+
+#email{
+  width: 300px;
+  height: 30px;
+  border: none;
+  text-align: center;
+  border-radius: 3px;
+  padding-left: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px; 
+}
+
+#address{
+  width: 300px;
+  height: 30px;
+  border: none;
+  text-align: center;
+  border-radius: 3px;
+  padding-left: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;  
+}
+
+#city{
+  width: 300px;
+  height: 30px;
+  border: none;
+  text-align: center;
+  border-radius: 3px;
+  padding-left: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px; 
+}
+
+#state{
+  width: 100px;
+  height: 30px;
+  border-radius: 3px;
+  padding-left: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  text-align: center;
+}
+
+#zip{
+  width: 100px;
+  height: 30px;
+  border: none;
+  border-radius: 3px;
+  padding-left: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  text-align: center;
+}
+
+#cName{
+  width: 300px;
+  height: 30px;
+  border: none;
+  text-align: center;
+  border-radius: 3px;
+  padding-left: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#cCNum{
+  width: 300px;
+  height: 30px;
+  border: none;
+  text-align: center;
+  border-radius: 3px;
+  padding-left: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#expmonth{
+  width: 300px;
+  height: 30px;
+  border: none;
+  text-align: center;
+  border-radius: 3px;
+  padding-left: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#expyear{
+  width: 100px;
+  height: 30px;
+  border: none;
+  text-align: center;
+  border-radius: 3px;
+  padding-left: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+#cvv{
+  width: 100px;
+  height: 30px;
+  border: none;
+  text-align: center;
+  border-radius: 3px;
+  padding-left: 8px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  font-size: 24px;
+  list-style: none;
+  display: inline;
+}
+
+#dataContinue{
+    margin-left: 40px;
+    width: 380px;
+    height: 30px;
+    border: none;
+    border-radius: 17px;
+    padding-left: 7px;
+    background-color: azure;
+    cursor: pointer;
+}

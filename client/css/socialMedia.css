@@ -1,0 +1,39 @@
+.column{
+    float: right;
+    height: 200px;
+    width: 100px;
+}
+.row{
+    float: right;
+    content:"";
+    clear: both;
+    display: table;
+}
+#facebook {
+	position: relative;
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+#instagram {
+	position: relative;
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+#pinterest {
+	position: relative;
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+#twitter {
+	position: relative;
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}

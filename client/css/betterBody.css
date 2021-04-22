@@ -1,0 +1,983 @@
+header, main, nav, footer, figure, figcaption, aside, section, article {display:block;}
+
+body{
+    background-color:azure;
+    color:black;
+    font-family: Verdana, Arial, sans-serif;
+    }
+h2{
+    text-align: center;
+}
+h3{
+    text-align: center;
+}
+h5{
+    text-align: center;
+}
+
+/*foods to not include*/
+#foods {
+	text-align: center;
+    width: 380px;
+    height: 580px;
+    overflow: visible;
+    margin: auto;
+	background-color: turquoise;
+    margin: 20 0 0 450px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-radius: 5px;
+}
+#dRDoneData{
+	background-color: azure;
+    color: black;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    float: left;
+    width: 130px;
+}
+#updateDR{
+	background-color: azure;
+    color: black;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    float: right;
+    width: 130px;
+}
+
+/*Diet Type*/
+#dietType {
+	text-align: center;
+    width: 380px;
+    overflow: hidden;
+    margin: auto;
+	background-color: turquoise;
+    margin: 20 0 0 450px;
+    padding-left: 70px;
+    padding-right: 70px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-radius: 5px;
+}
+#dNext {
+	width: 180px;
+    height: 30px;
+    border: none;
+    border-radius: 17px;
+    padding-left: 7px;
+    background-color: azure;
+    cursor: pointer;
+}
+nav{
+    font-weight: bold;
+    text-align: center;
+    padding: 0px;
+    height: 80px;
+    background-color: turquoise;
+    position: relative;
+}
+main{
+    background-color: azure;
+    color: black;
+    margin-left: 40px;
+    display: block;
+}
+nav a{
+    text-decoration: none;
+}
+nav ul{
+    list-style-type: none;
+    padding: 0;
+    font-size: 13.9px;
+    text-align: center;
+}
+nav ul ul{
+    position: absolute;
+    background-color: turquoise;
+    padding: 0;
+    text-align: center;
+    display: none;
+}
+nav ul ul li{
+    border: 1px solid black;
+    display: block;
+    width: 15em;
+}
+nav li:hover ul{display: block;}
+
+nav a:link{
+    color: black;
+    text-decoration: underline;
+}
+nav a:visited{
+    color: black;
+}
+nav li:hover ul{
+    color:black;
+    display: block;
+}
+/*Member Login*/
+.login{
+	width: 382px;
+    overflow: hidden;
+    margin: auto;
+    margin: 20 0 0 450px;
+    padding: 50px;
+    background: turquoise;
+    border-radius: 15px;
+    box-shadow: 10px 10px 5px grey;
+}
+label{
+    color: black;
+    font-size: 17px;
+}
+#uName{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px;
+}
+#password{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 3px;
+    padding-left: 8px
+}
+#dataLogin{
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 17px;
+    padding-left: 7px;
+    background-color: azure;
+    cursor: pointer;
+}
+/*Chat*/
+#chatBox{
+    background-image: url(/client/css/images/chatBox1.png);
+    background-size: 55px;
+    background-repeat: no-repeat;
+    background-position: right;
+    float: right;
+}
+
+/*Meal Plan*/
+#mealPlan{
+    text-align: center;
+	background-color: turquoise;
+    color: black;
+    margin-top: 5px;
+    margin-left: 500px;
+    margin-right: 440px;
+    padding-top: 20px;
+    padding-left: 30px;
+    height: 370px;
+    width: 440px;
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+}
+
+#updateDiet{
+    background-color: azure;
+    color: black;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    float: center;
+    width: 140px;
+}
+#deleteButton {
+	background-color: azure;
+    color: black;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    float: center;
+    width: 140px;
+}
+
+#checkboxesDelete{
+     text-align: center;
+	background-color: turquoise;
+    color: black;
+    margin-top: 5px;
+    margin-left: 500px;
+    margin-right: 440px;
+    padding-top: 20px;
+    padding-left: 30px;
+    height: 370px;
+    width: 440px;
+    border-top-left-radius: 17px;
+    border-top-right-radius: 17px;
+}
+
+#cancel{
+    background-color: azure;
+    color: black;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    float: center;
+    width: 140px;
+}
+#deleteFoods {
+	background-color: azure;
+    color: black;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 14px;
+    cursor: pointer;
+    float: center;
+    width: 140px;
+}
+
+#planButtons{
+    text-align: center;
+	background-color: turquoise;
+    color: black;
+    margin-left: 500px;
+    margin-right: 440px;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    height: 70px;
+    width: 440px;
+    border-bottom-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+}
+#checkboxesDeleteButtons{
+    text-align: center;
+	background-color: turquoise;
+    color: black;
+    margin-left: 500px;
+    margin-right: 440px;
+    padding-top: 20px;
+    padding-left: 30px;
+    padding-bottom: 10px;
+    height: 70px;
+    width: 440px;
+    border-bottom-left-radius: 17px;
+    border-bottom-right-radius: 17px;
+}
+
+/*Settings pic*/
+#settings{
+	background-image: url(/client/css/images/settings1.png);
+    background-position: right;
+    background-size: 55px;
+    background-repeat: no-repeat;
+    float: right;
+}
+/*Settings*/
+.row{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap
+}
+
+.col-25{
+    -ms-flex: 25%;
+    flex: 25%;
+    display: grid;
+    grid-template: 1fr;
+    grid-gap: 10px 2em;
+    padding: 0 16px;
+}
+
+#settingsView{
+    text-align: center;
+	background-color: turquoise;
+    color: black;
+    margin-top: 5px;
+    margin-left: 500px;
+    margin-right: 440px;
+    padding-top: 20px;
+    padding-left: 10px;
+    height: 470px;
+    width: 440px;
+    border: 1px solid black;
+}
+
+#settingsF{
+    text-align: center;
+	background-color: turquoise;
+    color: black;
+    margin-top: 5px;
+    margin-left: 500px;
+    margin-right: 440px;
+    padding-top: 20px;
+    padding-left: 30px;
+    height: 470px;
+    width: 440px;
+    border: 1px solid black;
+}
+
+#sUpdate{
+    background-color: azure;
+    color: black;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: center;
+    width: 130px;
+}
+#sDelete {
+	background-color: azure;
+    color: black;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: center;
+    width: 100px;
+}
+#sLogout {
+	background-color: azure;
+    color: black;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: center;
+    width: 100px;
+}
+#updateButton{
+    background-color: azure;
+    color: black;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: center;
+    width: 100px;
+}
+#closeSettings {
+	background-color: azure;
+    color: black;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: center;
+    width: 130px;
+}
+
+/*meals*/
+#updateFoods{
+    width: 180px;
+    height: 30px;
+    border: none;
+    border-radius: 17px;
+    padding-left: 7px;
+    background-color: azure;
+    cursor: pointer;
+}
+
+header{
+    background-color:turquoise;
+    background-image: url(/client/css/images/dumbbell2.png);
+    background-position: left;
+    background-size: 90px;
+    background-repeat: no-repeat;
+    padding-left: 90px;
+    color: Black;
+    font-size: 3em;
+    font-family: sans-serif;
+   }
+header a:link{
+    color: black;
+    text-decoration: none;
+}
+header a:visited{
+    color: black;
+}
+header a:hover{
+    color: black;
+}
+
+/*Meal Categories List*/
+.column{
+    float: left;
+    height: 300px;
+    width: 200px;
+}
+.row::after{
+    content:"";
+    clear: both;
+    display: table;
+}
+/*#mealCategories {
+	width: 1000px;
+    height: 450px;
+    margin: 0 auto;
+    background-color: turquoise;
+    overflow: auto;
+}*/
+#breakfast {
+    position: relative;
+    height: 300px;
+    width: 200px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+#lunch{
+    position: relative;
+    height: 300px;
+    width: 200px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+#dinner {
+    position: relative;
+    height: 300px;
+    width: 200px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+#salads{
+    position: relative;
+   height: 300px;
+    width: 200px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+#smoothies {
+    position: relative;
+    height: 300px;
+    width: 200px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+#snacks {
+    position: relative;
+    height: 300px;
+    width: 200px;
+    background-repeat: no-repeat;
+    display: inline-block;;
+}
+#desserts {
+    position: relative;
+    height: 300px;
+    width: 200px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+/*Sign Up Form*/
+#signUp {
+    text-align: center;
+    width: 482px;
+    overflow: hidden;
+    margin: auto;
+	background-color: turquoise;
+    margin: 20 0 0 450px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 50px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px 5px grey;
+}
+#signUpBData{
+    width: 180px;
+    height: 30px;
+    border: none;
+    border-radius: 17px;
+    padding-left: 7px;
+    background-color: azure;
+    cursor: pointer;
+    float: right;
+}
+#clearF {
+	width: 180px;
+    height: 30px;
+    border: none;
+    border-radius: 17px;
+    padding-left: 7px;
+    background-color: azure;
+    cursor: pointer;
+    float: left;
+}
+
+/*Memberships*/
+#memberShip{
+    text-align: center;
+    width: 420px;
+    height: 260px;
+    overflow: hidden;
+    margin: auto;
+	background-color: turquoise;
+    margin: 20 0 0 450px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px 5px grey;
+}
+#buynow {
+	width: 380px;
+    height: 30px;
+    border: none;
+    border-radius: 17px;
+    padding-left: 7px;
+    background-color: azure;
+    cursor: pointer;
+}
+
+/*Member Tools*/
+#memberTools {
+	text-align: center;
+    width: 420px;
+    height: 220px;
+    overflow: hidden;
+    margin: auto;
+	background-color: turquoise;
+    margin: 20 0 0 450px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 10px 10px 20px 5px grey;
+}
+#loginPageRouter {
+    font-size: 30px;
+	width: 280px;
+    height: 60px;
+    border: none;
+    border-radius: 17px;
+    background-color: azure;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    padding: 8px 15px;
+    float: center;
+
+}
+#signUpPageRouter {
+    font-size: 30px;
+	width: 280px;
+    height: 60px;
+    border: none;
+    border-radius: 17px;
+    background-color: azure;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    padding: 8px 15px;
+    float: center;
+}
+
+#loginPageRouter a:link{
+    color: black;
+    text-decoration: none;
+}
+#loginPageRouter a:visited{
+    color: darkcyan;
+}
+#loginPageRouter a:hover{
+    color: darkcyan;
+}
+
+#signUpPageRouter a:link{
+    color: black;
+    text-decoration: none;
+}
+#signUpPageRouter a:visited{
+    color: darkcyan;
+}
+#signUpPageRouter a:hover{
+    color: darkcyan;
+}
+
+
+footer{
+    text-align: center;
+    font-style: italic;
+    font-size: .80em;
+}
+#mobile{
+    display: none;
+}
+#desktop{
+    display: inline;
+}
+
+/* Tablet Display */
+@media only screen and (max-width: 64em){
+    body{
+        margin:0;
+        background-color: azure;
+        background-image: none;
+    }
+    #wrapper{
+        min-width: 0;
+        width: auto;
+        box-shadow: none;
+    }
+    header{
+        margin: 0;
+        background-image: url(/client/css/images/dumbbell2.png);
+    }
+    main{
+        margin-left: 0;
+    }
+    nav{
+        float: none;
+        width: auto;
+        padding: 0;
+        height: 90px;
+    }
+    nav ul{
+        text-align: center;
+        font-size: 15px;
+        padding-top: 15px;
+    }
+    nav li{
+        display: inline;
+        padding-top: 5;
+        padding-bottom: 0;
+        padding-left: 5px;
+        padding-right: 0.75em;
+    }
+    
+    #fDone {
+        margin-left: 350px;
+        margin-right: 350px;
+    }
+    /*Diet Type*/
+     #diet {
+        text-align: center;
+        background-color: lightgrey;
+        color: black;
+        margin-top: 5px;
+        margin-left: 200px;
+        margin-right: 200px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 15px;
+        padding-left: 10px;
+    }
+    #dNext {
+        margin-left: 35px;
+        margin-right: 50px;
+    }
+    /*dR Foods */
+    #foods {
+	    text-align: center;
+        width: 380px;
+        height: 580px;
+        overflow: visible;
+	    background-color: turquoise;
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        border-radius: 5px;
+    }
+
+    #dRDoneData{
+        background-color: azure;
+        color: black;
+        padding: 8px 15px;
+        border: none;
+        border-radius: 14px;
+        cursor: pointer;
+        float: left;
+        width: 130px;
+    }
+    
+    #updateDR{
+        background-color: azure;
+        color: black;
+        padding: 8px 15px;
+        border: none;
+        border-radius: 14px;
+        cursor: pointer;
+        float: right;
+        width: 130px;
+    }
+    
+    /*Settings*/
+    #settingsView{
+    text-align: center;
+	background-color: turquoise;
+    color: black;
+    margin-top: 5px;
+    margin-left: 160px;
+    margin-right: 150px;
+    padding-top: 20px;
+    padding-left: 10px;
+    height: 470px;
+    width: 440px;
+    border: 1px solid black;
+}
+ 
+    #settingsF{
+    text-align: center;
+	background-color: turquoise;
+    color: black;
+    margin-top: 5px;
+    margin-left: 160px;
+    margin-right: 150px;
+    padding-top: 20px;
+    padding-left: 30px;
+    height: 470px;
+    width: 440px;
+    border: 1px solid black;
+    }
+    
+    /*Meal Plan*/
+    #mealPlan{
+        text-align: center;
+	    background-color: turquoise;
+        color: black;
+        margin-top: 5px;
+        margin-left: 150px;
+        margin-right: 200px;
+        padding-top: 20px;
+        padding-left: 30px;
+        height: 370px;
+        width: 440px;
+        border-top-left-radius: 17px;
+        border-top-right-radius: 17px;
+    }
+    
+    #planButtons{
+        text-align: center;
+	    background-color: turquoise;
+        color: black;
+        margin-left: 150px;
+        margin-right: 200px;
+        padding-top: 20px;
+        padding-left: 30px;
+        padding-bottom: 10px;
+        height: 70px;
+        width: 440px;
+        border-bottom-left-radius: 17px;
+        border-bottom-right-radius: 17px;
+    }
+}
+
+/*Smartphone Display */
+@media only screen and (min-width: 37.5em){
+    nav li{
+        display: inline-block;
+        width: 15em;
+        font-size: 100%;
+        text-align: center;
+        box-shadow: 2px 2px 2px #000;
+        background-color: turquoise;
+        margin: 1%;
+        padding: 1%;
+    }
+    nav a:link{
+        display: block;
+    }
+    nav a:visited{
+        display: block;
+    }
+    nav a:hover{
+        display:block;
+        text-decoration-color: #000000;
+    }
+    #mobile{
+        display:inline;
+    }
+    #desktop{
+        display: none;
+    }
+    
+        #fDone {
+        margin-left: 350px;
+        margin-right: 350px;
+    }
+    /*Diet Type*/
+     #diet {
+        text-align: center;
+        background-color: lightgrey;
+        color: black;
+        margin-top: 5px;
+        margin-left: 200px;
+        margin-right: 200px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-right: 15px;
+        padding-left: 10px;
+    }
+    #dNext {
+        margin-left: 35px;
+        margin-right: 50px;
+    }
+    /*dR Foods */
+    #foods {
+	    text-align: center;
+        width: 380px;
+        height: 580px;
+        overflow: visible;
+	    background-color: turquoise;
+        margin-left: 200px;
+        margin-right: 200px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 20px;
+        padding-bottom: 30px;
+        border-radius: 5px;
+    }
+
+    #dRDoneData{
+        background-color: azure;
+        color: black;
+        padding: 8px 15px;
+        border: none;
+        border-radius: 14px;
+        cursor: pointer;
+        float: left;
+        width: 130px;
+    }
+    
+    #updateDR{
+        background-color: azure;
+        color: black;
+        padding: 8px 15px;
+        border: none;
+        border-radius: 14px;
+        cursor: pointer;
+        float: right;
+        width: 130px;
+    }
+    
+    /*Settings*/
+    #settingsView{
+    text-align: center;
+	background-color: turquoise;
+    color: black;
+    margin-top: 5px;
+    margin-left: 500px;
+    margin-right: 150px;
+    padding-top: 20px;
+    padding-left: 10px;
+    height: 470px;
+    width: 440px;
+    border: 1px solid black;
+}
+ 
+    #settingsF{
+    text-align: center;
+	background-color: turquoise;
+    color: black;
+    margin-top: 5px;
+    margin-left: 500px;
+    margin-right: 150px;
+    padding-top: 20px;
+    padding-left: 30px;
+    height: 470px;
+    width: 440px;
+    border: 1px solid black;
+    }
+    
+    /*Meal Plan*/
+    #mealPlan{
+        text-align: center;
+	    background-color: turquoise;
+        color: black;
+        margin-top: 5px;
+        margin-left: 520px;
+        margin-right: 200px;
+        padding-top: 20px;
+        padding-left: 30px;
+        height: 370px;
+        width: 440px;
+        border-top-left-radius: 17px;
+        border-top-right-radius: 17px;
+    }
+    
+    #planButtons{
+        text-align: center;
+	    background-color: turquoise;
+        color: black;
+        margin-left: 520px;
+        margin-right: 200px;
+        padding-top: 20px;
+        padding-left: 30px;
+        padding-bottom: 10px;
+        height: 70px;
+        width: 440px;
+        border-bottom-left-radius: 17px;
+        border-bottom-right-radius: 17px;
+    }
+    
+} /* End of Smartphone Display */
+
+*{box-sizing: border-box;}
+
+body{font-family: verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container{
+    max-width: 500px;
+    position: relative;
+    margin: auto;
+}
+
+/*caption text */
+.text{
+    color: #000000;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/4 etc) */
+.numbertext{
+    color: black;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+/* The dots/bullets/indicators */
+.dot{
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 10s ease;
+}
+.active{
+    background-color: #717171;
+}
+/* Fading animaton */
+.fade{
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 7s;
+    animation-name: fade;
+    animation-duration: 7s;
+}
+@-webkit-keyframes fade{
+    from{opacity: .4}
+    to{opacity: 1}
+}
+@keyframes fade{
+    from{opacity: .4}
+    to{opacity: 1}
+}
