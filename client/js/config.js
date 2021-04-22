@@ -1,0 +1,1 @@
+var gymURL = 'http://localhost:5000';
