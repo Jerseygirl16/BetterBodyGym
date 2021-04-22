@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="/client/js/meals.js"></script>
+<script src="/client/js/config.js"></script>
+	<title> Diet Type </title>
+    <link rel="stylesheet" type="text/css" href="/client/css/betterBody.css">
+     <link rel="stylesheet" type="text/css" href="/client/css/account.css">
+    <link rel="icon" href="/client/css/images/dumbbell.ico" type="image/x-icon">
+</head>
+
+<body data-ng-app="addFoodsApp" data-ng-controller="addFoodsCtrl" data-ng-init="hideFoodForm=true; hideSearch=true" >
+<!--<div  data-ng-show="hideFoodForm=false"></div>-->
+<header>BetterBody Gym</header>
+<h1> </h1>  
+<nav id="router_button">
+    <ul>
+        <li><a href="/client/loginHome.html" id="loginHomeRouter"> Login Home </a></li>
+        <li><a href="/client/mealPlan.html" id="mealPlanRouter"> Diet Plan </a></li>
+        <li><a href="/client/settings.html" id="settingsRouter"> Settings </a>
+        </li>
+    </ul>
+    </nav>
+    <h2>Diet Type</h2>
+    
+<section data-ng-hide="hideTypeForm">
+    <form id="dietType">
+        <h3>Diet Type</h3>
+        <td><input type="radio" name="gluten" id="gluten" data-ng-model="dietType" data-ng-value="'Gluten Free'">Gluten Free</td><br>
+        <td><input type="radio" name="paleo" id="paleo" data-ng-model="dietType" data-ng-value="'Paleo '">Paleo</td><br>
+        <td><input type="radio" name="pescatarian" id="pescatarian" data-ng-model="dietType" data-ng-value="'Pescatarian'">Pescatarian</td><br>
+        <td><input type="radio" name="vegetarian" id="vegetarian" data-ng-model="dietType" data-ng-value="'Vegetarian'">Vegetarian</td><br>
+        <td><input type="radio" name="vegan" id="vegan" data-ng-model="dietType" data-ng-value="'Vegan'">Vegan</td><br>
+        <td><input type="radio" name="none" id="none" data-ng-model="dietType" data-ng-value="'None'">None</td>
+        <br><br>
+        <button id="dNext" data-ng-click="nextDR()">Next</button>
+    </form>
+
+    </section>  
+    
+<section data-ng-hide="hideFoodForm">
+  <form id="foods">
+    <div data-ng-repeat="dRFood in dRFoods">
+        <input type="checkbox" data-ng-true-value="'{{dRFood.name}}'" data-ng-false-value="''" data-ng-model="dRFood.selected">{{dRFood.name}}
+      </div>
+        
+      <td><input type="checkbox" name="other" id="other" data-ng-click="searchB()" data-ng-true-value="'Other '">Other</td><br>
+        <div data-ng-hide="hideSearch">
+            <input type="text" name="search" id="search" data-ng-model="addSearch" placeholder="search">
+            <button id="addSearch" data-ng-click="addSData()">Add</button>
+        </div><br>
+        <div>{{addSearchData}}</div><br>
+      
+      <button id="dRDoneData" data-ng-click="dRDoneData()">Done</button>
+
+      <button id="updateDR" data-ng-click="updateDR()">Update</button>
+      <div>{{addDRDone}}</div>
+      <div>{{updateDRButton}}</div>
+        </form>
+</section>
+    <div data-ng-repeat="obj in arrFoods">
+        <div>{{obj}}</div>
+    </div>
+<br><br><br>
+
+    
+    <footer id="router_button">
+    <a href="/client/privacyPolicy.html" id="privacyRouter"> Privacy Policy </a>&nbsp; <a href="/client/contactUs.html" id="contactRouter"> Contact Us </a><br>
+    Copyright &copy; 2019 Better Body Gym <br> atrufolo2@my.brookdalecc.edu
+</footer>
+</body>
+</html>

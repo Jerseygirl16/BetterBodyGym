@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="/client/js/mealPlan.js"></script>
+<script src="/client/js/config.js"></script>
+	<title> Diet Plan </title>
+    <link rel="stylesheet" type="text/css" href="/client/css/betterBody.css">
+     <link rel="stylesheet" type="text/css" href="/client/css/account.css">
+    <link rel="icon" href="/client/css/images/dumbbell.ico" type="image/x-icon">
+</head>
+
+<body data-ng-app="viewMealPlanApp" data-ng-controller="viewMealPlanCtrl" data-ng-init="hideCheckboxes=true">
+<header>BetterBody Gym</header>
+<h1> </h1>  
+<nav id="router_button">
+    <ul>
+        <li><a href="/client/loginHome.html" id="loginHomeRouter"> Login Home </a></li>
+        <li><a href="/client/meals.html" id="mealsRouter">Diet Type</a></li>
+        <li><a href="/client/settings.html" id="settingsRouter"> Settings </a>
+        </li>
+    </ul>
+    </nav>
+    <h2>Diet Plan</h2>
+    
+    
+<section data-ng-hide="hidePlan">
+    
+    <div class="container" id="mealPlan">
+        <h4>Diet Type</h4>
+        <div>
+            <label id="dietTypePick">{{dietType}}</label>
+        </div><br>
+        <h4>Dietary Restrictions</h4>
+        <div data-ng-repeat="dRFood in dRFoods">
+            <label id="foodsPicked">{{dRFood}}</label>
+        </div>
+        <div data-ng-repeat="otherFood in otherFoods">
+            <label id="othersPicked">{{otherFood}}</label>
+        </div> 
+    </div>
+        
+
+    <div id="planButtons" class="row">
+    <div class="col-25">
+        <button id="updateDiet" data-ng-click="updateDiet()">Update</button>
+    </div>    
+    <div class="col-25">
+        <button id="deleteButton" data-ng-click="deleteButton()">Delete</button>
+    </div>
+    </div>
+    </section>
+    
+
+    
+    
+<section data-ng-hide="hideCheckboxes">
+    
+    <div class="container" id="checkboxesDelete">
+        <h4>Dietary Restrictions</h4>
+    <div data-ng-repeat="dRFood in dRFoods">
+        <input type="checkbox" data-ng-true-value="'yes'" data-ng-false-value="'no'" data-ng-model="dRFoods.selected[dRFood]" data-ng-init="dRFoods.selected[dRFood]=no">{{dRFood}}
+    </div>
+    <div data-ng-repeat="otherFood in otherFoods">
+        <input type="checkbox" data-ng-true-value="'yes'" data-ng-false-value="'no'" data-ng-model="otherFoods.selected[otherFood]" data-ng-init="otherFoods.selected[otherFood]=no">{{otherFood}}
+    </div>
+</div>
+
+    <div id="checkboxesDeleteButtons" class="row">
+    <div class="col-25">
+        <button id="cancel" data-ng-click="cancel()">Cancel</button><br><br>
+    </div>    
+    <div class="col-25">
+        <button id="deleteFoods" data-ng-click="deleteFoods()">Delete</button>
+    </div>
+        <div>{{deletedFoods}}</div>
+    </div>
+    </section>
+
+    
+    <br><br><br><br><br><br><br><br><br>
+       
+    <footer id="router_button">
+    <a href="/client/privacyPolicy.html" id="privacyRouter"> Privacy Policy </a>&nbsp; <a href="/client/contactUs.html" id="contactRouter"> Contact Us </a><br>
+    Copyright &copy; 2019 Better Body Gym <br> atrufolo2@my.brookdalecc.edu
+</footer>
+</body>
+</html>

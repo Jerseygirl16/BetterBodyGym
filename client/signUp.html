@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="/client/js/config.js"></script>
+<script src="/client/js/signUp.js"></script>
+	<title>Sign-up</title>
+    <link rel="stylesheet" type="text/css" href="/client/css/betterBody.css">
+    <link rel="icon" href="/client/css/images/dumbbell.ico" type="image/x-icon">
+</head>
+
+<body  data-ng-app="addSignUpApp" data-ng-controller="addSignUpCtrl">
+<header id="router_button"><a href="/client/index.html" id="homeRouter">BetterBody Gym</a></header>
+<h1> </h1>  
+<nav>
+      <ul>
+        <li><a href="/client/index.html" id="homeRouter"> Home </a></li><li><a href="/client/shop.html" id="shopRouter">Shop</a></li>
+        <li><a href="/client/memberTools.html" id="memToolsRouter"> Member Tools </a>
+            <ul>
+            <li><a href="/client/memberLogin.html" id="memLoginRouter">Member Login</a></li>
+            <li><a href="/client/memberships.html" id="memShipsRouter"> Sign-up </a></li>
+            </ul>
+        </li>
+        <li><a href="/client/career.html" id="careerRouter"> Career </a></li>
+    </ul>
+</nav>
+<h2>Sign-up</h2>
+<form id="signUp" name="signUp" novalidate>
+    <p>Please use email as your username.</p>
+    <label for="name"><b>Name:</b></label>
+    <input type="text" name="name" id="name" data-ng-model="name" required>
+    <span style="color:red" data-ng-show="signUp.name.$dirty && signUp.name.$invalid">
+      <span ng-show="signUp.name.$error.required">Name is required.</span>
+  </span>  
+    <br>
+    <label for="address"><b>Address:</b></label>
+    <input type="name" name="address" id="address" data-ng-model="address"><br>
+    <label for="email"><b>Email:</b></label>
+    <input type="email" name="email" id="email" data-ng-model="email" required>
+    <span style="color:red" data-ng-show="signUp.email.$dirty && signUp.email.$invalid">
+         <span ng-show="signUp.email.$error.required">Email is required.</span>
+            <span ng-show="signUp.email.$error.email">Invalid email address.</span>
+  </span>
+        
+    <br>
+    <label for="birthday"><b>Birthday:</b></label>
+    <input type="date" name="birthday" id="birthday" data-ng-model="birthday"><br>
+    <label for="height"><b>Height:</b></label>
+    <input type="text" name="height" id="height" data-ng-model="height"><br>
+    <label for="weight"><b>Weight:</b></label>
+    <input type="number" name="weight" id="weight" data-ng-model="weight"><br>
+   <label for="uName"><b>Username:</b>
+    <input type="text" name="uName" id="userName" data-ng-model="uName" required>
+       <span data-ng-show="signUp.uName.$dirty && signUp.uName.$invalid"></span>
+    </label>
+       <br>
+    <label for="password"><b>Password:</b>
+    <input type="password" name="password" id="psw" data-ng-model="password" data-ng-pattern="/^(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*#?&])[A-Za-z\d$@$!%*#?&]{8,20}$/" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required>
+    <span data-ng-show="signUp.password.$error.pattern" style="color: red">Not a valid password.</span>
+    <span data-ng-show="signUp.password.$dirty && signUp.password.$invalid"></span>
+    </label><br>
+  <br>
+        <div>
+            <input type="submit" value="Sign-up"  id="signUpBData" ng-disabled="signUp.name.$dirty && signUp.name.$invalid || signUp.email.$dirty && signUp.email.$invalid || signUp.uName.$dirty && signUp.uName.$invalid || signUp.passowrd.$dirty && signUp.passowrd.$invalid" data-ng-click="signUpBData()">
+        </div>
+        <div>{{addSignUp}}</div>
+        <div>
+        <button id="clearF" data-ng-click="clearF()">Clear</button>
+        </div>
+        <div>{{clearSignUp}}</div>
+    <br>
+  <h3>Password MUST contain the following:</h3>
+  <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
+  <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
+  <p id="number" class="invalid">A <b>number</b></p>
+  <p id="length" class="invalid">Minimum <b>8 characters</b></p>
+    </form>
+    
+   
+    <br>
+    
+
+<footer id="router_button">
+    <br><a href="/client/privacyPolicy.html" id="privacyRouter"> Privacy Policy</a>&nbsp; <a href="/client/contactUs.html" id="contactRouter"> Contact Us </a><br>
+    Copyright &copy; 2019 Better Body Gym <br> atrufolo2@my.brookdalecc.edu
+</footer>
+</body>
+</html>

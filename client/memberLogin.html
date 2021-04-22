@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="/client/js/config.js"></script>
+<script src="/client/js/memberLogin.js"></script>
+	<title> Member Login</title>
+    <link rel="stylesheet" type="text/css" href="/client/css/betterBody.css">
+    <link rel="icon" href="/client/css/images/dumbbell.ico" type="image/x-icon">
+</head>
+
+<body data-ng-app="addLoginApp" data-ng-controller="addLoginCtrl">
+<header id="router_button"><a href="/client/index.html">BetterBody Gym</a></header>
+<h1> </h1>  
+<nav>
+      <ul>
+        <li><a href="/client/index.html" id="homeRouter"> Home </a></li><li><a href="/client/shop.html" id="shopRouter">Shop</a></li>
+        <li><a href="/client/memberTools.html" id="memToolsRouter"> Member Tools </a>
+            <ul>
+            <li><a href="/client/memberLogin.html" id="memLoginRouter">Member Login</a></li>
+            <li><a href="/client/memberships.html" id="memShipsRouter"> Sign-up </a></li>
+            </ul>
+        </li>
+        <li><a href="/client/career.html" id="careerRouter"> Career </a></li>
+    </ul>
+</nav>
+<h2>Login</h2>
+<div class="login">
+<form id="loginF" novalidate>
+    <p>Please use email as username.</p>
+   <label for="uname"><b>Username:</b></label><br>
+    <input type="text" name="uName" id="uName" placeholder="Username" data-ng-model="uName" required>
+    <span data-ng-show="loginF.uName.$dirty && loginF.uName.$invalid">
+    <span ng-show="loginF.uName.$err.required">Username is required</span>
+    </span>
+    <br><br>
+    <label for="psw"><b>Password:</b></label><br>
+    <input type="password" name="password" id="password" placeholder="Password" data-ng-model="password" required>
+    <span data-ng-show="loginF.password.$dirty && loginF.password.$invalid">
+    <span ng-show="loginF.password.$err.required">Username is required</span>
+    </span>
+  <br><br>
+
+    <div id="save_button">
+        <button id="dataLogin" data-ng-click="dataLogin()" data-ng-disabled="loginF.uName.$dirty && loginF.uName.$invalid || loginF.password.$dirty && loginF.password.$invalid">Login</button>
+    </div>
+    <div>{{addResults}}</div>
+ </form>
+    </div>
+    
+<br><br><br><br><br><br><br>
+<footer id="router_button">
+    <br><a href="/client/privacyPolicy.html" id="privacyRouter"> Privacy Policy</a>&nbsp; <a href="/client/contactUs.html" id="contactRouter"> Contact Us </a><br> 
+    Copyright &copy; 2019 Better Body Gym <br> atrufolo2@my.brookdalecc.edu
+</footer>
+</body>
+</html>

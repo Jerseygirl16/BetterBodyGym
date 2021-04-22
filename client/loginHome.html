@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="/client/js/config.js"></script>
+<script src="/client/js/loginHome.js"></script>
+	<title> Account </title>
+    <link rel="stylesheet" type="text/css" href="/client/css/betterBody.css">
+     <link rel="stylesheet" type="text/css" href="/client/css/account.css">
+    <link rel="icon" href="/client/css/images/dumbbell.ico" type="image/x-icon">
+</head>
+
+<body data-ng-app="addPlansApp" data-ng-controller="addPlansCtrl">
+    <header>BetterBody Gym<a href="/client/settings.html" id="settingsRouter"><img src="/client/css/images/settings1.png" id="settings"></a></header>
+<h1> </h1>  
+<nav id="router_button">
+    <ul>
+        <li><a href="/client/meals.html" id="mealsRouter">Diet Type</a></li>
+        <li><a href="/client/mealPlan.html" id="mealPlanRouter"> Diet Plan </a></li>
+        <li><a href="/client/settings.html" id="settingsRouter"> Settings </a>
+        </li>
+    </ul>
+    </nav>
+<h1>Welcome Back, {{usersName}}!</h1>
+        <img id="gymPic" src="/client/css/images/gymEntrance.png">
+    
+<h3>Plan</h3>
+    <form id="plan">
+    <label for="wPWeek">Workouts Per Week</label>
+    <input type="number" id="wPWeek" name="wPWeek" min="1" max="7" data-ng-model="wPWeek"><br>
+    <label for="wLength">Workout Length</label><br>&nbsp;&nbsp;&nbsp;
+    <label for="fiveTen">5min-10min</label>
+    <input type="radio" id="fiveTen" name="fiveTen" data-ng-value="'5-10 minutes'" data-ng-model="planLength"><br>&nbsp;
+    <label for="tenTwenty">10min-20min</label>
+    <input type="radio" id="tenTwenty" name="tenTwenty" data-ng-value="'10-20 minutes'"  data-ng-model="planLength"><br>&nbsp;
+    <label for="twentyThirty">20min-30min</label>
+    <input type="radio" id="twentyThirty" name="twentyThirty" data-ng-value="'20-30 minutes'" data-ng-model="planLength"><br>&nbsp;
+    <label for="thirtyForty">30min-40min</label>
+    <input type="radio" id="thirtyForty" name="thirtyForty" data-ng-value="'30-40 minutes'" data-ng-model="planLength"><br>&nbsp;
+    <label for="fortyFifty">40min-50min</label>
+    <input type="radio" id="fortyFifty" name="fortyFifty" data-ng-value="'40-50 minutes'"  data-ng-model="planLength"><br>&nbsp;
+    <label for="fiftySixty">50min-60min</label>
+    <input type="radio" id="fiftySixty" name="fiftySixty" data-ng-value="'50-60 minutes'"  data-ng-model="planLength"><br><br>
+    <label for="gWeight">Goal Weight:</label>
+    <input type="number" id="gWeight" name="gWeight" data-ng-model="gWeight"><br><br>
+    <label for="fitnessGoals">Fitness Goals:</label><br>
+    <p>Only write something if you want to add more to your goals!</p>
+    <textarea name="cm" id="cm" rows="4" cols="40" id="fGComments" placeholder="Write Comments" data-ng-model="fGComments"></textarea><br><br>
+    <div>
+        <button id="pDoneData" data-ng-click="pDoneData()">Done</button>    
+    </div>    
+    <div>{{addPDone}}</div>
+    </form>
+    
+<h3>Sign-up For Classes</h3>
+    <form id="classes">
+    <p>You can sign-up for classes for up to a week.</p>
+    <input type="radio" name="spinClass" id="spinClass"  data-ng-model="classes" data-ng-value="'Spin Class'">Spin Class<br>
+    <input type="radio" name="waterAerobics" id="waterAerobics" data-ng-model="classes" data-ng-value="'Water Aerobics'">Water Aerobics<br>
+    <input type="radio" name="yoga" id="yoga" data-ng-model="classes" data-ng-value="'Yoga'">Yoga<br>
+    <input type="radio" name="zumba" id="zumba" data-ng-model="classes" data-ng-value="'Zumba'">Zumba<br>
+    <label for="startDate">Choose a start date</label>
+    <input type="date" name="startDate" id="startDate" data-ng-model="myDateStart"><br><br>
+    <label for="endDate">Choose an end date</label>
+    <input type="date" name="endDate" id="endDate" data-ng-model="myDateEnd"><br><br>
+    <div>
+        <button id="cSubmitData" data-ng-click="cSubmitData()">Submit</button>
+    </div>
+        <div>{{addCSubmit}}</div>
+        
+    <div>
+        <button id="cReset" data-ng-click="cReset()">Reset</button>    
+    </div>
+    <div>{{clearClasses}}</div>
+</form><br>
+<footer id="router_button">
+    <br><a href="/client/privacyPolicy.html" id="privacyRouter"> Privacy Policy</a>&nbsp; <a href="/client/contactUs.html" id="contactRouter"> Contact Us </a><br>
+    Copyright &copy; 2019 Better Body Gym <br> atrufolo2@my.brookdalecc.edu
+</footer>
+</body>
+</html>

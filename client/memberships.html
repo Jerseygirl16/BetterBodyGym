@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="/client/js/config.js"></script>
+<script src="/client/js/memberships.js"></script>
+    <title> Memberships </title>
+    <link rel="stylesheet" type="text/css" href="/client/css/betterBody.css">
+    <link rel="icon" href="/client/css/images/dumbbell.ico" type="image/x-icon">
+</head>
+
+<body data-ng-app="addMembershipsApp" data-ng-controller="addMembershipsCtrl">
+<header id="router_button"><a href="/client/index.html">BetterBody Gym</a></header>
+<h1> </h1>  
+<nav id="router_button">
+      <ul>
+        <li><a href="/client/index.html" id="homeRouter"> Home </a></li><li><a href="/client/shop.html" id="shopRouter">Shop</a></li>
+        <li><a href="/client/memberTools.html" id="memToolsRouter"> Member Tools </a>
+            <ul>
+            <li><a href="/client/memberLogin.html" id="memLoginRouter">Member Login</a></li>
+            <li><a href="/client/memberships.html" id="memShipsRouter"> Sign-up </a></li>
+            </ul>
+        </li>
+        <li><a href="/client/career.html" id="careerRouter"> Career </a></li>
+    </ul>
+</nav>
+<main>
+<h2>Memberships</h2>
+    <form id="memberShip">
+    <p>Please fill out this form to create an account.</p>
+    <input type="radio" name="standard" id="standard" data-ng-value="'Standard'" data-ng-model="membershipType">Standard-$25<br>
+    <input type="radio" name="weightLoss" id="weightLoss" data-ng-model="membershipType" data-ng-value="'Weight Loss'">Weight Loss-$35<br>
+    <input type="radio" name="weightGain" id="weightGain" data-ng-model="membershipType" data-ng-value="'Weight Gain'">Weight Gain-$35<br>
+    <input type="radio" name="bodyBuilding" id="bodyBuilding" data-ng-model="membershipType"data-ng-value="'Body Building'" >Body Building-$45<br>
+    <input type="radio" name="bikiniCompetitors" id="bikiniCompetitors" data-ng-model="membershipType" data-ng-value="'Bikini Competitors'">Bikini Competitors-$55<br>
+    <input type="radio" name="physiqueCompetitors" id="physiqueCompetitors" data-ng-model="membershipType" data-ng-value="'Physique Competitors'">Physique Competitors-$65<br><br>
+        <div>
+        <button id="buynow" data-ng-click="buynow()">Buy Now</button>
+            
+        <div>{{addBuyNow}}</div>
+    </div>
+    </form>
+    
+    <br><br>
+    <dt><strong>Included in memberships</strong></dt>
+    <p>Each membership will include a login for members to keep track of their workout plans. Which includes a calendar for members to schedule when they want to workout on their own time, how long they want to workout, how many times per week that they want to workout, etc. They will also be able to choose which type of diet they would like to be on, as well as choose foods they wouldn't like included in their meal choices. Members will have the option of a personal trainer if they would like one, they can also make appointments with their trainers once they are logined in to their accounts and so much more! If you feel like seeing what else we have to offer sign up now!</p>
+</main>
+<footer id="router_button">
+    <br><a href="/client/privacyPolicy.html" id="privacyRouter"> Privacy Policy</a>&nbsp; <a href="/client/contactUs.html" id="contactRouter"> Contact Us </a><br>
+    Copyright &copy; 2019 Better Body Gym <br> atrufolo2@my.brookdalecc.edu
+</footer>
+</body>
+</html>

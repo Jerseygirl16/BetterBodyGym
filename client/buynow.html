@@ -1,1 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="/client/js/config.js"></script>
+<script src="/client/js/buynow.js"></script>
+<link rel="stylesheet" type="text/css" href="/client/css/paymentOrder.css">
+	<title> Buy Now </title>
+    <link rel="stylesheet" type="text/css" href="client/css/betterBody.css">
+    <link rel="icon" href="/client/css/images/dumbbell.ico" type="image/x-icon">
+</head>
 
+<body data-ng-app="addCheckoutApp" data-ng-controller="addCheckoutCtrl">
+<header id="router_button"><a href="/client/index.html" id="homeRouter">BetterBody Gym</a></header>
+<nav id="router_button">
+    <ul>
+        <li><a href="/client/index.html" id="homeRouter"> Home </a></li><li><a href="/client/shop.html" id="shopRouter">Shop</a></li>
+        <li><a href="/client/memberTools.html" id="memToolsRouter"> Member Tools </a>
+            <ul>
+            <li><a href="/client/memberLogin.html" id="memLoginRouter">Member Login</a></li>
+            <li><a href="/client/memberships.html" id="memShipsRouter"> Sign-up </a></li>
+            </ul>
+        </li>
+        <li><a href="/client/career.html" id="careerRouter"> Career </a></li>
+    </ul>
+</nav>   
+    
+    <br>
+    
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form id="buy">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" data-ng-model="name" placeholder="Full Name">
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" data-ng-model="email" placeholder="Email">
+            <label for="address">Address</label>
+            <input type="text" id="address" data-ng-model="address" name="address" placeholder="Address">
+            <label for="city">City</label>
+            <input type="text" id="city" name="city" data-ng-model="city" placeholder="City"><br>
+
+            <div class="row">
+              <div class="col-25">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" data-ng-model="state" placeholder="State">
+                  
+            </div>
+            <div class="col-25">
+                <label for="bZip">Zip</label>
+                <input type="number" id="zip" name="zip" data-ng-model="zip"placeholder="Zip">
+              </div>
+            </div>
+          </div>
+            <br><br>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="acceptedCards">Accepted Cards</label>
+            <div class="icon-container" id="visa" data-ng-model="visa">
+                <img src="/client/css/images/VisaCard1.png" height="42">
+              </div>
+            <div class="icon-container" id="american" data-ng-model="american">
+                <img src="/client/css/images/AmericanExpress1.png" height="42">
+              </div>
+            <div class="icon-container" id="master" data-ng-model="master">
+                <img src="/client/css/images/MasterCard1.png" height="42">
+              </div>
+            <div class="icon-container" id="discover" data-ng-model="discover">
+                <img src="/client/css/images/DiscoverCard1.png" height="42"></div><br><br>
+                
+            <label for="cName">Name on Card</label>
+            <input type="text" id="cName" name="cardname" required data-ng-model="cName" placeholder="Name on Card">
+            <label for="cCNum">Credit card number</label>
+            <input type="number" id="cCNum" name="cardnumber" required data-ng-model="cCNum" placeholder="xxxx-xxxx-xxxx-xxxx" min="16">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" required data-ng-model="expmonth" placeholder="01/21">
+            <div class="row">
+              <div class="col-25">
+                <label for="expyear">Exp Year</label>
+                <input type="number" id="expyear" name="expyear" required data-ng-model="expyear" placeholder="2021">
+                </div>
+              <div class="col-25">
+                <label for="cvv">CVV</label>
+                <input type="password" id="cvv" name="cvv" required data-ng-model="cvv" placeholder="xxx">
+              </div>
+            </div>
+          </div>
+           
+        </div>
+        <button id="dataContinue"><a href="/client/signUp.html">Continue to Sign-up</a></button>
+        
+        </form>
+    </div>
+  </div>
+<div>{{addCheckout}}</div>
+</div>
+
+<br><br>
+<footer id="router_button">
+<a href="/client/privacyPolicy.html" id="privacyRouter">Privacy Policy</a>&nbsp;<a href="/client/contactUs.html" id="contactRouter">Contact Us</a><br>
+    Copyright&copy; 2019 BetterBody Gym<br>atrufolo2@my.brookdalecc.edu
+</footer>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="/client/js/settings.js"></script>
+<script src="/client/js/config.js"></script>
+	<title> Settings </title>
+    <link rel="stylesheet" type="text/css" href="/client/css/betterBody.css">
+    <link rel="icon" href="client/css/images/dumbbell.ico" type="image/x-icon">
+</head>
+
+<body data-ng-app="addSettingsApp" data-ng-controller="addSettingsCtrl" data-ng-init="clearInfo=' '; hideUpdateSettings=true">
+<header>BetterBody Gym</header>
+<h1> </h1>  
+<nav id="router_button">
+    <ul>
+        <li><a href="/client/loginHome.html" id="loginHomeRouter"> Login Home </a></li><li><a href="/client/meals.html" id="mealsRouter">Meals</a></li>
+        <li><a href="/client/mealPlan.html" id="mealPlanRouter"> Diet Plan </a></li>
+    </ul>
+    </nav>
+    <main>
+<h2>Settings</h2>
+
+<section data-ng-hide="hideSettings">
+<form id="settingsView">
+    <label for="name">Name:</label>
+        <label id="viewName">{{name}}</label><br><br>
+    <label for="address">Address:</label>
+        <label id="viewAddress">{{address}}</label><br><br>
+     <label for="email">Email:</label>
+        <label id="viewEmail">{{email}}</label><br><br>
+    <label for="birthday">Birthday:</label>
+        <label id="viewBirthday">{{birthday}}</label><br><br>
+     <label for="height">Height:</label>
+        <label id="viewHeight">{{height}}</label><br><br>
+    <label for="weight">Weight:</label>
+        <label id="viewWeight">{{weight}}</label><br><br>
+    <label for="username">Username:</label>
+        <label id="viewUsername">{{uName}}</label><br><br>
+    <label for="password">Password:</label>
+        <label id="viewPassword">{{password}}</label><br><br>
+    <br><br>
+    <div class="row">
+    <div class="col-25">
+        <button id="updateButton" data-ng-click="updateButton()">Update</button>
+    </div>    
+    <div class="col-25">
+        <button id="sDelete" data-ng-click="deleteAccount()">Delete Account</button>
+    </div>
+    <div class="col-25">
+        <button id="sLogout" data-ng-click="logOut()">Log Out</button>
+    </div>
+    </div>
+</form>
+        
+</section>        
+    
+<section data-ng-hide="hideUpdateSettings">
+<form id="settingsF">
+    <label for="name"><b>Name:</b></label>
+    <input type="text" name="name" id="name" data-ng-model="name"><br><br>
+    <label for="address"><b>Address:</b></label>
+    <input type="address" name="address" id="address"  data-ng-model="address"><br><br>
+    <label for="email"><b>Email:</b></label>
+    <input type="email" name="email" id="email" data-ng-model="email"><br><br>
+    <label for="weight"><b>Weight:</b></label>
+    <input type="text" name="weight" id="weight" data-ng-model="weight" required><br><br>
+    <label for="uname"><b>Username:</b></label>
+    <input type="text" name="uName" id="userName" data-ng-model="uName"><br><br>
+    <label for="psw"><b>Password:</b></label>
+    <input type="password" name="password" id="psw" data-ng-model="password">
+  <br><br>
+   <div class="row">
+    <div class="col-25">
+        <button id="sUpdate" data-ng-click="updateSet()">Update</button>
+    </div>   
+    <div class="col-25">
+        <button id="closeSettings" data-ng-click="closeSet()">Cancel</button>   
+    </div><br>
+    <div>{{updateInfo}}</div>
+    </div>
+        </form>
+    </section>
+</main>
+<footer id="router_button">
+    <br><a href="/client/privacyPolicy.html" id="privacyRouter"> Privacy Policy</a>&nbsp; <a href="/client/contactUs.html" id="contactRouter"> Contact Us </a><br> 
+    Copyright &copy; 2019 Better Body Gym <br> atrufolo2@my.brookdalecc.edu
+</footer>
+</body>
+</html>
