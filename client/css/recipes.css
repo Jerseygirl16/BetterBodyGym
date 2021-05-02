@@ -1,0 +1,404 @@
+/*Recipes Design*/
+article {
+   /* background: radial-gradient(azure 30%, turquoise);*/
+    /* background: linear-gradient(rgb(49, 49, 49) 50%, turquoise);*/
+    background-color: rgb(49, 49, 49);
+    color: white;
+    border: 5px solid transparent;
+    background: linear-gradient(to bottom, rgb(49, 49, 49), rgb(49, 49, 49)),
+                linear-gradient(1deg, turquoise, turquoise);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    /*border: 1px solid darkturquoise;
+    border-radius: 50px;
+    box-shadow: 10px 10px 40px rgb(51, 51, 51);*/
+    /*width: 650px;*/
+    margin-left: 310px;
+    margin-right: 340px;
+    height: 350px;
+    padding-top: 20px;
+    padding-left: 55px;
+    padding-right: 55px;
+    padding-bottom: 15px;
+   /*  margin-left: 400px;
+    margin-right: 50px;*/
+}
+
+.row {
+	display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap
+}
+.col-25 {
+	-ms-flex: 25%;
+    flex: 25%;
+    display: grid;
+    grid-template: 1fr;
+    grid-gap: 10px 2em;
+    padding: 0 16px;;
+    
+}
+
+/*Breakfast - Oatmeal Pancakes*/
+#oatmealPancakes{
+    position: relative;
+    height: 250px;
+    width: 180px;
+    background-repeat: no-repeat;
+    display: inline-block; 
+}
+
+#oatPancakesButton{
+    background-color: black;
+    height: 280px;
+    width: 200px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#oatPancakes{
+    background: linear-gradient(turquoise, azure);
+    margin-left: 310px;
+    margin-right: 340px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 5px solid transparent;
+    background: linear-gradient(to bottom, turquoise, azure),
+                linear-gradient(1deg, rgb(49, 49, 49), turquoise);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+
+#oatPancakes ul li {
+	list-style-type: none;
+}
+
+#pancakes{
+    position: absolute;
+    margin-left: 600px;
+    width: 194px;
+    height: 194px;
+    object-fit: cover;
+    border: 5px solid transparent;
+    background: linear-gradient(to bottom, azure, azure),
+                linear-gradient(180deg, azure, turquoise);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    /*background: linear-gradient(azure, turquoise);*/
+    border-radius: 50%;
+}
+
+/*Lunch -  Lettuce Wraps*/
+#lettuceWraps{
+    position: relative;
+    height: 250px;
+    width: 180px;
+    background-repeat: no-repeat;
+    display: inline-block; 
+}
+
+#lettuceWrapsButton{
+    background-color: black;
+    height: 280px;
+    width: 200px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#asianLettuceWraps{
+    background: linear-gradient(turquoise, azure);
+    margin-left: 310px;
+    margin-right: 340px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 5px solid transparent;
+    background: linear-gradient(to bottom, turquoise, azure),
+                linear-gradient(1deg, rgb(49, 49, 49), turquoise);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+
+#asianLettuceWraps ul li {
+	list-style-type: none;
+}
+
+#wraps{
+    position: absolute;
+    margin-left: 600px;
+    width: 194px;
+    height: 194px;
+    object-fit: cover;
+    border: 5px solid transparent;
+    background: linear-gradient(to bottom, azure, azure),
+                linear-gradient(180deg, azure, turquoise);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    /*background: linear-gradient(azure, turquoise);*/
+    border-radius: 50%;
+}
+
+/*Dinner - Lemon Chicken Breast*/
+#lemonChicken{
+    position: relative;
+    height: 250px;
+    width: 180px;
+    background-repeat: no-repeat;
+    display: inline-block; 
+}
+
+#lemonChickenButton{
+    background-color: black;
+    height: 280px;
+    width: 200px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#lemonChickenBreast{
+    background: linear-gradient(turquoise, azure);
+    margin-left: 310px;
+    margin-right: 340px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 5px solid transparent;
+    background: linear-gradient(to bottom, turquoise, azure),
+                linear-gradient(1deg, rgb(49, 49, 49), turquoise);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+
+#lemonChickenBreast ul li {
+	list-style-type: none;
+}
+
+#chickenBreast{
+    position: absolute;
+    margin-left: 600px;
+    width: 194px;
+    height: 194px;
+    object-fit: cover;
+    border: 5px solid transparent;
+    background: linear-gradient(to bottom, azure, azure),
+                linear-gradient(180deg, azure, turquoise);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    /*background: linear-gradient(azure, turquoise);*/
+    border-radius: 50%;
+}
+
+/*Salad - Turkey and Apple Salad*/
+#turkeySalad{
+    position: relative;
+    height: 250px;
+    width: 180px;
+    background-repeat: no-repeat;
+    display: inline-block; 
+}
+
+#turkeySaladButton{
+    background-color: black;
+    height: 280px;
+    width: 200px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#turkeyAppleSalad{
+    background: linear-gradient(turquoise, azure);
+    margin-left: 310px;
+    margin-right: 340px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 5px solid transparent;
+    background: linear-gradient(to bottom, turquoise, azure),
+                linear-gradient(1deg, rgb(49, 49, 49), turquoise);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+
+#turkeyAppleSalad ul li {
+	list-style-type: none;
+}
+
+#turkeyApple{
+    position: absolute;
+    margin-left: 600px;
+    width: 194px;
+    height: 194px;
+    object-fit: cover;
+    border: 5px solid transparent;
+    background: linear-gradient(to bottom, azure, azure),
+                linear-gradient(180deg, azure, turquoise);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    /*background: linear-gradient(azure, turquoise);*/
+    border-radius: 50%;
+}
+
+/*Smoothies - Chocolate Peanut Butter Banana Smoothie*/
+#chocoPBBanana{
+    position: relative;
+    height: 250px;
+    width: 180px;
+    background-repeat: no-repeat;
+    display: inline-block; 
+}
+
+#chocoPBBananaButton{
+    background-color: black;
+    height: 280px;
+    width: 200px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#chocolatePBBanana{
+    background: linear-gradient(turquoise, azure);
+    margin-left: 310px;
+    margin-right: 340px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 5px solid transparent;
+    background: linear-gradient(to bottom, turquoise, azure),
+                linear-gradient(1deg, rgb(49, 49, 49), turquoise);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+
+#chocolatePBBanana ul li {
+	list-style-type: none;
+}
+
+#chocoPeanutButterBanana{
+    position: absolute;
+    margin-left: 600px;
+    width: 194px;
+    height: 194px;
+    object-fit: cover;
+    border: 5px solid transparent;
+    background: linear-gradient(to bottom, azure, azure),
+                linear-gradient(180deg, azure, turquoise);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    /*background: linear-gradient(azure, turquoise);*/
+    border-radius: 50%;
+}
+
+/*Snacks - Garlic Hummus*/
+#garlicHummus{
+    position: relative;
+    height: 250px;
+    width: 180px;
+    background-repeat: no-repeat;
+    display: inline-block; 
+}
+
+#garlicHummusButton{
+    background-color: black;
+    height: 280px;
+    width: 200px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#healthyGarlicHummus{
+    background: linear-gradient(turquoise, azure);
+    margin-left: 310px;
+    margin-right: 340px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 5px solid transparent;
+    background: linear-gradient(to bottom, turquoise, azure),
+                linear-gradient(1deg, rgb(49, 49, 49), turquoise);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+
+#healthyGarlicHummus ul li {
+	list-style-type: none;
+}
+
+#hummus{
+    position: absolute;
+    margin-left: 600px;
+    width: 194px;
+    height: 194px;
+    object-fit: cover;
+    border: 5px solid transparent;
+    background: linear-gradient(to bottom, azure, azure),
+                linear-gradient(180deg, azure, turquoise);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    /*background: linear-gradient(azure, turquoise);*/
+    border-radius: 50%;
+}
+
+/*Desserts - Healthy Strawberry Sorbet*/
+#strawberrySorbet{
+    position: relative;
+    height: 250px;
+    width: 180px;
+    background-repeat: no-repeat;
+    display: inline-block; 
+}
+
+#strawberrySorbetButton{
+    background-color: black;
+    height: 280px;
+    width: 200px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    cursor: pointer;
+}
+
+#healthyStrawberrySorbet{
+    background: linear-gradient(turquoise, azure);
+    margin-left: 310px;
+    margin-right: 340px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border: 5px solid transparent;
+    background: linear-gradient(to bottom, turquoise, azure),
+                linear-gradient(1deg, rgb(49, 49, 49), turquoise);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+}
+
+#healthyStrawberrySorbet ul li {
+	list-style-type: none;
+}
+
+#sorbet{
+    position: absolute;
+    margin-left: 600px;
+    width: 194px;
+    height: 194px;
+    object-fit: cover;
+    border: 5px solid transparent;
+    background: linear-gradient(to bottom, azure, azure),
+                linear-gradient(180deg, azure, turquoise);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    /*background: linear-gradient(azure, turquoise);*/
+    border-radius: 50%;
+}
