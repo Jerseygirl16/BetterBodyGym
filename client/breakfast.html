@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="/client/js/config.js"></script>
+<script src="/client/js/breakfast.js"></script>
+	<title> Breakfast</title>
+    <link rel="stylesheet" type="text/css" href="/client/css/betterBody.css">
+    <link rel="stylesheet" type="text/css" href="/client/css/recipes.css">
+    <link rel="icon" href="/client/css/images/dumbbell.ico" type="image/x-icon">
+</head>
+
+<body data-ng-app="viewBreakfast" data-ng-controller="viewBreakfast" data-ng-init="hideOatPancakes=true; hideBreakfastRecipes=true">
+<header id="router_button"><a href="/client/index.html" id="homeRouter">BetterBody Gym</a></header>
+<h1> </h1>  
+<nav id="router_button">
+    <ul>
+        <li><a href="/client/loginHome.html" id="loginHomeRouter"> Account </a></li>
+        <li><a href="/client/meals.html" id="mealsRouter">Diet Type</a></li>
+        <li><a href="/client/mealPlan.html" id="mealPlanRouter"> Diet Plan </a></li>
+        <li><a href="/client/settings.html" id="settingsRouter"> Settings </a>
+        </li>
+    </ul>
+    </nav>
+    <br>
+    <a href="mealCategories.html">&larr; Go back to Recipes</a> &nbsp; <a href="breakfast.html" data-ng-hide="hideBreakfastRecipes" style="float: right;">&larr; Go back to Breakfast Recipes</a>
+<main>
+    <h2>Breakfast Recipes</h2>
+    <h3></h3>
+    <div data-ng-hide="hideSecNavBar" class="row">
+            <div class="column">
+               <!-- <a href="lunch.html"><img src="/client/css/images/lunch1.png" id="lunch"></a>-->
+            </div>
+             <div class="column">
+               <!-- <a href="dinner.html"><img src="/client/css/images/dinner.png" id="dinner"></a>-->
+            </div>
+            <div class="column">
+                <!--<a href="salads.html"><img src="/client/css/images/salads.png" id="salads"></a>-->
+            </div>
+            <div class="column">
+                <button data-ng-click="showOatPancakes()" id="oatPancakesButton"><img src="/client/css/images/oatPancakes2.jpg" id="oatmealPancakes"></button>
+            </div><!--reorder if i have more recipes start from left to right-->
+            <div class="column">
+               <!-- <a href="smoothies.html"><img src="/client/css/images/smoothies.png" id="smoothies"></a>-->
+            </div>
+            <div class="column">
+               <!-- <a href="snacks.html"><img src="/client/css/images/snacks.png" id="snacks"></a>-->
+            </div>
+             <div class="column">
+               <!-- <a href="desserts.html"><img src="/client/css/images/desserts.png" id="desserts"></a>-->
+        </div></div>
+    <div data-ng-hide="hideOatPancakes">
+
+        <img src="/client/css/images/breakfast.jpg" id="pancakes"><br><br><br><br><br><br><br><br>
+    <article>
+                <h1 style="font-size: 25px; text-align: center">Easy Gluten Free Oatmeal Pancakes</h1>
+            <h2 style="font-size: 20px">by SavorySpin</h2>
+            <div class="row"><div class="col-25"><li style="float: left">Yield: 10 PANCAKES (2 EACH)</li><br></div>
+            <div class="col-25"><li style="float: right">prep time: 10 MINUTES</li><br></div>
+            <div class="col-25"><li style="float: left">cook time: 50 MINTUES</li><br></div>
+            <div class="col-25"><li style="float: right">total time: 1 HOUR</li><br></div>
+            </div>
+            <p>Made with just 6 pantry staple ingredients (some of which I use in my oatmeal), these gluten-free, super Easy Oatmeal Pancakes are thick and delicious</p>
+            <image src="/client/css/images/sf_star.png" alt="stars"/>
+            <image src="/client/css/images/sf_star.png" alt=""/>
+            <image src="/client/css/images/sf_star.png" alt=""/>
+            <image src="/client/css/images/sf_halfstar.png" alt=""/>
+        </article>
+    
+    <section id="oatPancakes">
+    
+    <h2 style="font-size: 20px">Ingredients</h2>
+    <ul>
+        <li>2 1/2 cups rolled oats</li>
+        <li>1/2 tsp nutmeg</li>
+        <li>1 tsp cinnamon</li>
+        <li>2 tsp baking powder</li>
+        <li>1/2 tsp salt</li>
+        <li>2 cups almond milk (or milk of your choice)</li>
+        <li>2 eggs</li>
+    </ul>
+    <h2 style="font-size: 20px">Directions</h2>
+    <ol>
+        <li>Add the rolled oats to a blender and blend till they resemble a flour-like consistency. Then sppon them into a bowl.</li>
+        <li>Also to the bowl, add in the baking powder, salt, cinnamon and nutmeg and mix with a spoon. Then add in the milk and eggs and mixx till well incorporated. Set mixture aside for 5-8 minutes to thicken up.</li>
+        <li>While waiting, place a pan over a low-medium flame and let it warm.</li>
+        <li>When pancake mixture is thickened, grease  pan with vegan butter and ladle 2-3 tablespoonfuls of mis onto pan, and cook 2-3 minutes on each side, till golden and that golden ring forms around the circumference of the pancake.</li>
+        <li>Serve pancakes with whipped cream, golden syrup or maple syrup or jam, and raspberries and enjoy!</li>
+    </ol>
+    
+    <h2>Notes</h2>
+    <ul>
+        <li>*If you are using store bought oat flour -  approximetely 1.75 cups of oat flour = 1 cup of rolled oats</li>
+        <li>**Serve with almond butter, honey, jelly, pancake syrup or whatever you prefer, before diving in!</li>
+    </ul>
+        </section>
+        </div>
+</main>
+    <br><br><br><br><br><br><br><br>
+
+    
+    <footer id="router_button">
+    <a href="/client/privacyPolicy.html" id="router_button"> Privacy Policy </a>&nbsp; <a href="/client/contactUs.html" id="contactRouter"> Contact Us </a><br>
+    Copyright &copy; 2019 Better Body Gym <br> atrufolo2@my.brookdalecc.edu
+</footer>
+</body>
+</html>

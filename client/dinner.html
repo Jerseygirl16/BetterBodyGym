@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="/client/js/config.js"></script>
+<script src="/client/js/dinner.js"></script>
+	<title> Dinner</title>
+    <link rel="stylesheet" type="text/css" href="/client/css/betterBody.css">
+    <link rel="stylesheet" type="text/css" href="/client/css/recipes.css">
+    <link rel="icon" href="/client/css/images/dumbbell.ico" type="image/x-icon">
+</head>
+
+<body data-ng-app="viewDinner" data-ng-controller="viewDinner" data-ng-init="hideChickenDinner=true; hideDinnerRecipes=true">
+<header id="router_button"><a href="/client/index.html" id="homeRouter">BetterBody Gym</a></header>
+<h1> </h1>  
+<nav id="router_button">
+    <ul>
+        <li><a href="/client/loginHome.html" id="loginHomeRouter"> Account </a></li>
+        <li><a href="/client/meals.html" id="mealsRouter">Diet Type</a></li>
+        <li><a href="/client/mealPlan.html" id="mealPlanRouter"> Diet Plan </a></li>
+        <li><a href="/client/settings.html" id="settingsRouter"> Settings </a>
+        </li>
+    </ul>
+    </nav>
+    <br>
+    <a href="mealCategories.html">&larr; Go back to Recipes</a> &nbsp; <a href="dinner.html" data-ng-hide="hideDinnerRecipes" style="float: right;">&larr; Go back to Dinner Recipes</a>
+<main>
+    <h2>Dinner Recipes</h2>
+    <h3></h3>
+    <div data-ng-hide="hideSecNavBar" class="row">
+            <div class="column">
+                <!--<a href="breakfast.html"><img src="/client/css/images/breakfast.png" id="breakfast"></a>-->
+            </div>
+            <div class="column">
+                <!--<a href="lunch.html"><img src="/client/css/images/lunch1.png" id="lunch"></a>-->
+            </div>
+            <div class="column">
+                <!--<a href="salads.html"><img src="/client/css/images/salads.png" id="salads"></a>-->
+            </div>
+            <div class="column">
+                <button data-ng-click="showChickenDinner()" id="lemonChickenButton"><img src="/client/css/images/dinner.jpg" id="lemonChicken"></button>
+            </div><!--reorder if i have more recipes start from left to right-->
+            <div class="column">
+                <!--<a href="smoothies.html"><img src="/client/css/images/smoothies.png" id="smoothies"></a>-->
+            </div>
+            <div class="column">
+                <!--<a href="snacks.html"><img src="/client/css/images/snacks.png" id="snacks"></a>-->
+            </div>
+             <div class="column">
+                <!--<a href="desserts.html"><img src="/client/css/images/desserts.png" id="desserts"></a>-->
+        </div></div>
+    
+    <div data-ng-hide="hideChickenDinner">
+
+        <img src="/client/css/images/dinner.jpg" id="chickenBreast"><br><br><br><br><br><br><br><br>
+    <article>
+                <h1 style="font-size: 25px; text-align: center">Skillet Lemon Chicken Breast Dinner</h1>
+            <h2 style="font-size: 20px">by SkinnyMS</h2>
+            <div class="row"><div class="col-25"><li style="float: left">Yield: 2 people</li><br></div>
+            <div class="col-25"><li style="float: right">Serving Size: 1 chicken breast with 1/2 of potatoes</li><br></div>
+            <div class="col-25"><li style="float: left">cook time: 30 to 40 MINTUES</li><br></div>
+            </div>
+            <p>This chicken dinner is easy to prepare and has delicious flavors both kids and adults will approve of.</p>
+            <image src="/client/css/images/sf_star.png" alt="stars"/>
+            <image src="/client/css/images/sf_star.png" alt=""/>
+            <image src="/client/css/images/sf_star.png" alt=""/>
+        </article>
+    
+    <section id="lemonChickenBreast">
+    
+    <h2 style="font-size: 20px">Ingredients</h2>
+    <ul>
+        <li>8 red potatoes small, quartered (about 3/4 pound)<li>
+        <li>1 lemon zested and juiced</li>
+        <li>4 garlic cloves thinly sliced</li>
+        <li>1/4 teaspoon crushed red pepper flakes</li>
+        <li>1 cup water</li>
+        <li>2 boneless and skinless chicken breasts about 6 to 8 ounces each</li>
+        <li>1/4 teaspoon kosher salt</li>
+        <li>1/8 teaspoon ground black pepper</li>
+        <li>1/2 teaspoon dried thyme</li>
+        <li>2 cups arugula</li>
+    </ul>
+    <h2 style="font-size: 20px">Directions</h2>
+    <ol>
+        <li>Preheat the oven to 400° F.</li>
+        <li>On the stovetop, heat a large, oven-proof skillet over medium heat. Add the potatoes, lemon zest, lemon juice, garlic, crushed red pepper flakes, and water. Bring the mixture to a simmer.</li>
+        <li>Cover and continue to simmer until the potatoes are cooked through, about 10 minutes.</li>
+        <li>Meanwhile, pat the chicken breasts dry and season them with salt, pepper, and thyme.</li>
+        <li>Remove the lid and add the chicken breasts on top of the potatoes.</li>
+        <li>Bake for 30 to 40 minutes, until the chicken reaches an internal temperature of 165 degrees F.</li>
+        <li>Place a chicken breast on each plate and top it with 1/2 cup of the arugula. Drizzle the pan juices over the arugula and serve the potatoes on the side.</li>
+    </ol>
+        </section>
+        </div>
+    
+</main>
+    <br><br><br><br><br><br><br><br>
+
+    
+    <footer id="router_button">
+    <a href="/client/privacyPolicy.html" id="router_button"> Privacy Policy </a>&nbsp; <a href="/client/contactUs.html" id="contactRouter"> Contact Us </a><br>
+    Copyright &copy; 2019 Better Body Gym <br> atrufolo2@my.brookdalecc.edu
+</footer>
+</body>
+</html>

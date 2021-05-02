@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="/client/js/config.js"></script>
+<script src="/client/js/lunch.js"></script>
+	<title> Lunch</title>
+    <link rel="stylesheet" type="text/css" href="/client/css/betterBody.css">
+    <link rel="stylesheet" type="text/css" href="/client/css/recipes.css">
+    <link rel="icon" href="/client/css/images/dumbbell.ico" type="image/x-icon">
+</head>
+
+<body data-ng-app="viewLunch" data-ng-controller="viewLunch" data-ng-init="hideLettuceWraps=true; hidelunchRecipes=true">
+<header id="router_button"><a href="/client/index.html" id="homeRouter">BetterBody Gym</a></header>
+<h1> </h1>  
+<nav id="router_button">
+    <ul>
+        <li><a href="/client/loginHome.html" id="loginHomeRouter"> Account </a></li>
+        <li><a href="/client/meals.html" id="mealsRouter">Diet Type</a></li>
+        <li><a href="/client/mealPlan.html" id="mealPlanRouter"> Diet Plan </a></li>
+        <li><a href="/client/settings.html" id="settingsRouter"> Settings </a>
+        </li>
+    </ul>
+    </nav>
+    <br>
+    <a href="mealCategories.html">&larr; Go back to Recipes</a> &nbsp; <a href="lunch.html" data-ng-hide="hidelunchRecipes" style="float: right;">&larr; Go back to Lunch Recipes</a>
+<main>
+    <h2>Lunch Recipes</h2>
+    <h3></h3>
+    <div data-ng-hide="hideSecNavBar" class="row">
+            <div class="column">
+                <!--<a href="breakfast.html"><img src="/client/css/images/breakfast.png" id="breakfast"></a>-->
+            </div>
+             <div class="column">
+                <!--<a href="dinner.html"><img src="/client/css/images/dinner.png" id="dinner"></a>-->
+            </div>
+            <div class="column">
+                <!--<a href="salads.html"><img src="/client/css/images/salads.png" id="salads"></a>-->
+            </div>
+             <div class="column">
+                <button data-ng-click="showLettuceWraps()" id="lettuceWrapsButton"><img src="/client/css/images/lunch.jpg" id="lettuceWraps"></button>
+            </div><!--reorder if i have more recipes start from left to right-->
+            <div class="column">
+                <!--<a href="smoothies.html"><img src="/client/css/images/smoothies.png" id="smoothies"></a>-->
+            </div>
+            <div class="column">
+                <!--<a href="snacks.html"><img src="/client/css/images/snacks.png" id="snacks"></a>-->
+            </div>
+             <div class="column">
+                <!--<a href="desserts.html"><img src="/client/css/images/desserts.png" id="desserts"></a>-->
+        </div></div>
+    
+    <div data-ng-hide="hideLettuceWraps">
+
+        <img src="/client/css/images/lunch.jpg" id="wraps"><br><br><br><br><br><br><br><br>
+    <article>
+                <h1 style="font-size: 25px; text-align: center">Healthy Asian Chicken Lettuce Wraps</h1>
+            <h2 style="font-size: 20px">by As Easy As Apple Pie</h2>
+            <div class="row"><div class="col-25"><li style="float: left">Yield: 4 servings</li><br></div>
+            <div class="col-25"><li style="float: right">prep time:5 MINUTES</li><br></div>
+            <div class="col-25"><li style="float: left">cook time: 50 MINTUES</li><br></div>
+            <div class="col-25"><li style="float: right">total time: 15 MINTUES</li><br></div>
+            </div>
+            <p>These Healthy Asian Chicken Lettuce Wraps are perfect for a quick and easy lunch or dinner. Ready in 15 minutes!</p>
+            <image src="/client/css/images/sf_star.png" alt="stars"/>
+            <image src="/client/css/images/sf_star.png" alt=""/>
+            <image src="/client/css/images/sf_star.png" alt=""/>
+            <image src="/client/css/images/sf_star.png" alt=""/>
+            <image src="/client/css/images/sf_star.png" alt=""/>
+        </article>
+    
+    <section id="asianLettuceWraps">
+    
+    <h2 style="font-size: 20px">Ingredients</h2>
+    <ul><div style="color: darkcyan">For The Sauce:</div><br>
+        <li>6 tbsp low sodium soy sauce</li>
+        <li>2 cloves garlic (minced)</li>
+        <li>2 tbsp honey</li>
+        <li>2 tbsp water</li>
+        <li>1 tbsp finely chopped ginger</li>
+        <li>1 tbsp rice vinegar</li>
+        <li>1 tbsp chili past</li>
+        <li>the juice of 2 limes</li>
+        <li>1 tsp cornstarch</li>
+    </ul><br>
+    <ul><div style="color: darkcyan">For The Chicken:</div><br>
+        <li>1 tbsp olive oil or sesame oil</li>
+        <li>1 Ib. (450 grams) ground lean chicken</li>
+        <li>1/4 cup (40 grams) lightly salted cashews (coarsely chopped)</li>
+        <li>3 green onions (thinly slice)</li>
+        <li>16 lettuce leaves (for wrapping)</li>
+    </ul><br>
+    <ul><div style="color: darkcyan">Toppings (Optional):</div><br>
+        <li>1 carrot (shredded or finely sliced, I used a spiralizer)</li>
+        <li>cilantro (finely chopped)</li>
+        <li>lightly salted cashews (coarsely chopped)</li>
+    </ul>
+    <h2 style="font-size: 20px">Directions</h2>
+    <ol>
+        <div style="color: darkcyan">Prepare The Sauce</div><br>
+        <li>Place all the ingredients in a small bowl and whisk to combine. Set aside</li><br>
+        <div style="color: darkcyan">Cook the Chicken</div><br>
+        <li>Heat the olive oil in a large skillet over medium heat. Add the ground chicken and break down any big lumps. Cook, stirring occasionally until the chicken is browned.</li>
+        <li>Add the cashews and cook, stirring, for 1-2 minutes, then add the sauce and cook for 1-2 minutes more. Stir in the green onions. </li><br>
+        <div style="color: darkcyan">Assemble</div><br>
+        <li>Remove from heat and scoop the chicken mixture into the lettuce leaves.Top with chopped cilantro, cashews, shredded carrots and serve.</li>
+    </ol>
+        </section>
+        </div>
+    
+</main>
+    <br><br><br><br><br><br><br><br>
+
+    
+    <footer id="router_button">
+    <a href="/client/privacyPolicy.html" id="router_button"> Privacy Policy </a>&nbsp; <a href="/client/contactUs.html" id="contactRouter"> Contact Us </a><br>
+    Copyright &copy; 2019 Better Body Gym <br> atrufolo2@my.brookdalecc.edu
+</footer>
+</body>
+</html>

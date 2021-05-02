@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="/client/js/config.js"></script>
+<script src="/client/js/desserts.js"></script>
+	<title> Desserts</title>
+    <link rel="stylesheet" type="text/css" href="/client/css/betterBody.css">
+    <link rel="stylesheet" type="text/css" href="/client/css/recipes.css">
+    <link rel="icon" href="/client/css/images/dumbbell.ico" type="image/x-icon">
+</head>
+
+<body data-ng-app="viewDesserts" data-ng-controller="viewDesserts" data-ng-init="hideStrawberrySorbet=true; hideDessertRecipes=true">
+<header id="router_button"><a href="/client/index.html" id="homeRouter">BetterBody Gym</a></header>
+<h1> </h1>  
+<nav id="router_button">
+    <ul>
+        <li><a href="/client/loginHome.html" id="loginHomeRouter"> Account </a></li>
+        <li><a href="/client/meals.html" id="mealsRouter">Diet Type</a></li>
+        <li><a href="/client/mealPlan.html" id="mealPlanRouter"> Diet Plan </a></li>
+        <li><a href="/client/settings.html" id="settingsRouter"> Settings </a>
+        </li>
+    </ul>
+    </nav>
+    <br>
+    <a href="mealCategories.html">&larr; Go back to Recipes</a> &nbsp; <a href="desserts.html" data-ng-hide="hideDessertRecipes" style="float: right;">&larr; Go back to Desserts Recipes</a>
+<main>
+    <h2>Desserts Recipes</h2>
+    <h3></h3>
+    <div data-ng-hide="hideSecNavBar" class="row">
+            <div class="column">
+                <!--<a href="breakfast.html"><img src="/client/css/images/breakfast.png" id="breakfast"></a>-->
+            </div>
+            <div class="column">
+                <!--<a href="lunch.html"><img src="/client/css/images/lunch1.png" id="lunch"></a>-->
+            </div>
+             <div class="column">
+                <!--<a href="dinner.html"><img src="/client/css/images/dinner.png" id="dinner"></a>-->
+            </div>
+            <div class="column">
+                <button data-ng-click="showStrawberrySorbet()" id="strawberrySorbetButton"><img src="/client/css/images/dessert.jpg" id="strawberrySorbet"></button>
+            </div><!--reorder if i have more recipes start from left to right-->
+            <div class="column">
+                <!--<a href="salads.html"><img src="/client/css/images/salads.png" id="salads"></a>-->
+            </div>
+            <div class="column">
+                <!--<a href="smoothies.html"><img src="/client/css/images/smoothies.png" id="smoothies"></a>-->
+            </div>
+            <div class="column">
+                <!--<a href="snacks.html"><img src="/client/css/images/snacks.png" id="snacks"></a>-->
+        </div>
+    </div>
+    
+    <div data-ng-hide="hideStrawberrySorbet">
+
+        <img src="/client/css/images/dessert.jpg" id="sorbet"><br><br><br><br><br><br><br><br>
+    <article>
+                <h1 style="font-size: 25px; text-align: center">Healthy Strawberry Sorbet</h1>
+            <h2 style="font-size: 20px">by My Fussy Eater</h2>
+            <div class="row"><div class="col-25"><li style="float: left">Yield: 4 Servings</li><br></div>
+            <div class="col-25"><li style="float: right">prep time: 3 MINUTES</li><br></div>
+            <div class="col-25"><li style="float: right">total time: 3 MINUTES</li><br></div>
+            </div>
+            <p>A super easy and very healthy recipe for Strawberry Sorbet made with just 3 natural ingredients. A brilliant frozen summer snack for kids!</p>
+            <image src="/client/css/images/sf_star.png" alt="stars"/>
+            <image src="/client/css/images/sf_star.png" alt=""/>
+            <image src="/client/css/images/sf_star.png" alt=""/>
+            <image src="/client/css/images/sf_halfstar.png" alt=""/>
+        </article>
+    
+    <section id="healthyStrawberrySorbet">
+    
+    <h2 style="font-size: 20px">Ingredients</h2>
+    <ul>
+        <li>300g / 2 1/2 cups frozen strawberries</li>
+        <li>1 tbsp honey or maple syrup</li>
+        <li>180ml / 3/4 cup cold water</li>
+    </ul>
+    <h2 style="font-size: 20px">Directions</h2>
+    <ol>
+        <li>Add the frozen strawberries and honey / maple syrup to a food processor or blender. Then add about half of the water to start with and blitz until smooth. If needed add a little more water at a time until you get the right consistency.</li>
+        <li>Either serve the sorbet straight away or transfer it to a container and freeze.</li>
+        <li>When left in the freezer for a couple of hours the sorbet will freeze solid so leave it to defrost for about 15-20 minutes before trying to scoop it!</li>
+    </ol>
+        </section>
+        </div>
+    
+</main>
+    <br><br><br><br><br><br><br><br>
+
+    
+    <footer id="router_button">
+    <a href="/client/privacyPolicy.html" id="router_button"> Privacy Policy </a>&nbsp; <a href="/client/contactUs.html" id="contactRouter"> Contact Us </a><br>
+    Copyright &copy; 2019 Better Body Gym <br> atrufolo2@my.brookdalecc.edu
+</footer>
+</body>
+</html>

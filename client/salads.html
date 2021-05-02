@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="/client/js/config.js"></script>
+<script src="/client/js/salads.js"></script>
+	<title>Salads</title>
+    <link rel="stylesheet" type="text/css" href="/client/css/betterBody.css">
+    <link rel="stylesheet" type="text/css" href="/client/css/recipes.css">
+    <link rel="icon" href="/client/css/images/dumbbell.ico" type="image/x-icon">
+</head>
+
+<body data-ng-app="viewSalads" data-ng-controller="viewSalads" data-ng-init="hideTurkeySalad=true; hideSaladRecipes=true">
+<header id="router_button"><a href="/client/index.html" id="homeRouter">BetterBody Gym</a></header>
+<h1> </h1>  
+<nav id="router_button">
+    <ul>
+        <li><a href="/client/loginHome.html" id="loginHomeRouter"> Account </a></li>
+        <li><a href="/client/meals.html" id="mealsRouter">Diet Type</a></li>
+        <li><a href="/client/mealPlan.html" id="mealPlanRouter"> Diet Plan </a></li>
+        <li><a href="/client/settings.html" id="settingsRouter"> Settings </a>
+        </li>
+    </ul>
+    </nav>
+    <br>
+    <a href="mealCategories.html">&larr; Go back to Recipes</a> &nbsp; <a href="salads.html" data-ng-hide="hideSaladRecipes" style="float: right;">&larr; Go back to Salad Recipes</a>
+<main>
+    <h2>Salads Recipes</h2>
+    <h3></h3>
+    <div data-ng-hide="hideSecNavBar" class="row">
+            <div class="column">
+                <!--<a href="breakfast.html"><img src="/client/css/images/breakfast.png" id="breakfast"></a>-->
+            </div>
+            <div class="column">
+                <!--<a href="lunch.html"><img src="/client/css/images/lunch1.png" id="lunch"></a>-->
+            </div>
+             <div class="column">
+                <!--<a href="dinner.html"><img src="/client/css/images/dinner.png" id="dinner"></a>-->
+            </div>
+            <div class="column">
+                <button data-ng-click="showSaladRecipes()" id="turkeySaladButton"><img src="/client/css/images/salad.jpg" id="turkeySalad"></button>
+            </div><!--reorder if i have more recipes start from left to right-->
+            <div class="column">
+                <!--<a href="smoothies.html"><img src="/client/css/images/smoothies.png" id="smoothies"></a>-->
+            </div>
+            <div class="column">
+                <!--<a href="snacks.html"><img src="/client/css/images/snacks.png" id="snacks"></a>-->
+            </div>
+             <div class="column">
+                <!--<a href="desserts.html"><img src="/client/css/images/desserts.png" id="desserts"></a>-->
+        </div></div>
+    
+    <div data-ng-hide="hideTurkeySalad">
+
+        <img src="/client/css/images/salad.jpg" id="turkeyApple"><br><br><br><br><br><br><br><br>
+    <article>
+                <h1 style="font-size: 25px; text-align: center">Smoked Turkey and Apple Salad</h1>
+            <h2 style="font-size: 20px">by TastofHome</h2>
+            <div class="row"><div class="col-25"><li style="float: left">Yield: 4 Servings</li><br></div>
+            <div class="col-25"><li style="float: right">prep time: 10 MINUTES</li><br></div>
+            <div class="col-25"><li style="float: right">total time: 20 MINUTES</li><br></div>
+            </div>
+        <p>An eye-catching dish, this refreshing salad is a great main course for a summer lunch or light dinner. The dressing's Dijon flavor goes nicely with the turkey, and the apples add crunch. —Carolyn Johns, Lacey, Washington</p>
+            <image src="/client/css/images/sf_star.png" alt="stars"/>
+            <image src="/client/css/images/sf_star.png" alt=""/>
+            <image src="/client/css/images/sf_star.png" alt=""/>
+            <image src="/client/css/images/sf_star.png" alt=""/>
+            <image src="/client/css/images/sf_star.png" alt=""/>
+        </article>
+    
+    <section id="turkeyAppleSalad">
+    
+    <h2 style="font-size: 20px">Ingredients</h2>
+    <ul><div style="color: darkcyan">For Dressings:</div><br>
+        <li>5 tablespoons olive oil</li>
+        <li>2 tablespoons cider vinegar</li>
+        <li>1 tablespoon Dijon mustard</li>
+        <li>1/2 teaspoon lemon-pepper seasoning</li>
+    </ul><br>
+    <ul><div style="color: darkcyan">For Salad:</div><br>
+        <li>6 to 8 cups watercress or torn romaine</li>
+        <li>1 medium carrot, julienned</li>
+        <li>10 cherry tomatoes, halved</li>
+        <li>8 ounces sliced deli smoked turkey, cut into strips</li>
+        <li>4 medium apples, sliced</li>
+        <li1/3 cup chopped walnuts, toasted</li>
+    </ul>
+        
+    <h2 style="font-size: 20px">Directions</h2>
+    <ol>
+        <li>Whisk together first four ingredients.</li>
+        <li>Place watercress on a platter; top with carrot, tomatoes, turkey and apples. Drizzle with dressing; top with walnuts. Serve immediately.</li>
+    </ol>
+        </section>
+        </div>
+    
+</main>
+    <br><br><br><br><br><br><br><br>
+
+    
+    <footer id="router_button">
+    <a href="/client/privacyPolicy.html" id="router_button"> Privacy Policy </a>&nbsp; <a href="/client/contactUs.html" id="contactRouter"> Contact Us </a><br>
+    Copyright &copy; 2019 Better Body Gym <br> atrufolo2@my.brookdalecc.edu
+</footer>
+</body>
+</html>

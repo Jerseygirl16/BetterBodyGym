@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+<script src="/client/js/config.js"></script>
+<script src="/client/js/snacks.js"></script>
+	<title> Snacks</title>
+    <link rel="stylesheet" type="text/css" href="/client/css/betterBody.css">
+    <link rel="stylesheet" type="text/css" href="/client/css/recipes.css">
+    <link rel="icon" href="/client/css/images/dumbbell.ico" type="image/x-icon">
+</head>
+
+<body data-ng-app="viewSnacks" data-ng-controller="viewSnacks" data-ng-init="hideHummus=true; hideSnackRecipes=true">
+<header id="router_button"><a href="/client/index.html" id="homeRouter">BetterBody Gym</a></header>
+<h1> </h1>  
+<nav id="router_button">
+    <ul>
+        <li><a href="/client/loginHome.html" id="loginHomeRouter"> Account </a></li>
+        <li><a href="/client/meals.html" id="mealsRouter">Diet Type</a></li>
+        <li><a href="/client/mealPlan.html" id="mealPlanRouter"> Diet Plan </a></li>
+        <li><a href="/client/settings.html" id="settingsRouter"> Settings </a>
+        </li>
+    </ul>
+    </nav>
+    <br>
+    <a href="mealCategories.html">&larr; Go back to Recipes</a> &nbsp; <a href="snacks.html" data-ng-hide="hideSnackRecipes" style="float: right;">&larr; Go back to Snacks Recipes</a>
+<main>
+    <h2>Snacks Recipes</h2>
+    <h3></h3>
+    <div data-ng-hide="hideSecNavBar" class="row">
+            <div class="column">
+                <!--<a href="breakfast.html"><img src="/client/css/images/breakfast.png" id="breakfast"></a>-->
+            </div>
+            <div class="column">
+                <!--<a href="lunch.html"><img src="/client/css/images/lunch1.png" id="lunch"></a>-->
+            </div>
+             <div class="column">
+                <!--<a href="dinner.html"><img src="/client/css/images/dinner.png" id="dinner"></a>-->
+            </div>
+            <div class="column">
+                <button data-ng-click="showHummus()" id="garlicHummusButton"><img src="/client/css/images/hummus.jpg" id="garlicHummus"></button>
+            </div><!--reorder if i have more recipes start from left to right-->
+            <div class="column">
+                <!--<a href="salads.html"><img src="/client/css/images/salads.png" id="salads"></a>-->
+            </div>
+            <div class="column">
+                <!--<a href="smoothies.html"><img src="/client/css/images/smoothies.png" id="smoothies"></a>-->
+            </div>
+             <div class="column">
+                <!--<a href="desserts.html"><img src="/client/css/images/desserts.png" id="desserts"></a>-->
+        </div></div>
+    
+        <div data-ng-hide="hideHummus">
+
+        <img src="/client/css/images/hummus.jpg" id="hummus"><br><br><br><br><br><br><br><br>
+    <article>
+                <h1 style="font-size: 25px; text-align: center">Garlic Hummus</h1>
+            <h2 style="font-size: 20px">by EatingWell</h2>
+            <div class="row"><div class="col-25"><li style="float: left">Yield: 8 Servings</li><br></div>
+            <div class="col-25"><li style="float: right">prep time: 10 MINUTES</li><br></div>
+            <div class="col-25"><li style="float: right">total time: 10 MINUTES</li><br></div>
+            </div>
+            <p>This classic hummus recipe couldn't be easier--just toss a few ingredients in the food processor and whir away! Aquafaba (the liquid from a can of chickpeas) makes this healthy dip extra smooth and creamy. Serve with veggie chips, pita chips or crudités.</p>
+            <image src="/client/css/images/sf_star.png" alt="stars"/>
+            <image src="/client/css/images/sf_star.png" alt=""/>
+            <image src="/client/css/images/sf_star.png" alt=""/>
+            <image src="/client/css/images/sf_star.png" alt=""/>
+            <image src="/client/css/images/sf_star.png" alt=""/>
+        </article>
+    
+    <section id="healthyGarlicHummus">
+    
+    <h2 style="font-size: 20px">Ingredients</h2>
+    <ul>
+        <li>1 (15 ounce) can no-salt-added chickpeas</li>
+        <li>1/4 cup tahini</li>
+        <li>1/4 cup extra-virgin olive oil</li>
+        <li>1/4 cup lemon juice</li>
+        <li>1 clove garlic</li>
+        <li>1 tsp ground cumin</li>
+        <li>1/2 tsp chili powder</li>
+        <li>1/2 tsp salt</li>
+    </ul>
+    <h2 style="font-size: 20px">Directions</h2>
+    <ol>
+        <li>Drain chickpeas, reserving 1/4 cup of the liquid. Transfer the chickpeas and the reserved liquid to a food processor. Add tahini, oil, lemon juice, garlic, cumin, chili powder and salt. Puree until very smooth, 2 to 3 minutes.</li>
+    </ol>
+        </section>
+        </div>
+    
+</main>
+    <br><br><br><br><br><br><br><br>
+
+    
+    <footer id="router_button">
+    <a href="/client/privacyPolicy.html" id="router_button"> Privacy Policy </a>&nbsp; <a href="/client/contactUs.html" id="contactRouter"> Contact Us </a><br>
+    Copyright &copy; 2019 Better Body Gym <br> atrufolo2@my.brookdalecc.edu
+</footer>
+</body>
+</html>
